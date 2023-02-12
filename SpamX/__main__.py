@@ -12,83 +12,83 @@ from . import (VenomX, VenomX2, VenomX3, VenomX4, VenomX5,
                 VenomX16, VenomX17, VenomX18, VenomX19, VenomX20, hl)
 
 if VenomX:
-    VenomX.Start()
+    VenomX.start()
     VenomX.join_chat("Its_Venom_family")
     VenomX.join_chat("Its_Venom_family")
 if VenomX2:
-    VenomX2.Start()
+    VenomX2.start()
     VenomX2.join_chat("Its_Venom_family")
     VenomX2.join_chat("Its_Venom_family")
 if VenomX3:
-    VenomX3.Start()
+    VenomX3.start()
     VenomX3.join_chat("Its_Venom_family")
     VenomX3.join_chat("Its_Venom_family")
 if VenomX4:
-    VenomX4.Start()
+    VenomX4.start()
     VenomX4.join_chat("Its_Venom_family")
     VenomX4.join_chat("Its_Venom_family")
 if VenomX5:
-    VenomX5.Start()
+    VenomX5.start()
     VenomX5.join_chat("Its_Venom_family")
     VenomX5.join_chat("Its_Venom_family")
 if VenomX6:
-    VenomX6.Start()
+    VenomX6.start()
     VenomX6.join_chat("Its_Venom_family")
     VenomX6.join_chat("Its_Venom_family")
 if VenomX7:
-    VenomX7.Start()
+    VenomX7.start()
     VenomX7.join_chat("Its_Venom_family")
     VenomX7.join_chat("Its_Venom_family")
 if VenomX8:
-    VenomX8.Start()
+    VenomX8.start()
     VenomX8.join_chat("Its_Venom_family")
     VenomX8.join_chat("Its_Venom_family")
 if VenomX9:
-    VenomX9.Start()
+    VenomX9.start()
     VenomX9.join_chat("Its_Venom_family")
     VenomX9.join_chat("Its_Venom_family")
 if VenomX10:
-    VenomX10.Start()
+    VenomX10.start()
     VenomX10.join_chat("Its_Venom_family")
     VenomX10.join_chat("Its_Venom_family")
 if VenomX11:
-    VenomX11.Start()
+    VenomX11.start()
     VenomX11.join_chat("Its_Venom_family")
     VenomX11.join_chat("Its_Venom_family")
 if VenomX12:
-    VenomX12.Start()
+    VenomX12.start()
     VenomX12.join_chat("Its_Venom_family")
     VenomX12.join_chat("Its_Venom_family")
 if VenomX13:
-    VenomX13.Start()
+    VenomX13.start()
     VenomX13.join_chat("Its_Venom_family")
     VenomX13.join_chat("Its_Venom_family")
 if VenomX14:
-    VenomX14.Start()
+    VenomX14.start()
     VenomX14.join_chat("Its_Venom_family")
     VenomX14.join_chat("Its_Venom_family")
 if VenomX15:
-    VenomX15.Start()
+    VenomX15.start()
     VenomX15.join_chat("Its_Venom_family")
     VenomX15.join_chat("Its_Venom_family")
 if VenomX16:
-    VenomX16.Start()
+    VenomX16.start()
     VenomX16.join_chat("Its_Venom_family")
     VenomX16.join_chat("Its_Venom_family")
 if VenomX17:
-    VenomX17.Start()
+    VenomX17.start()
     VenomX17.join_chat("Its_Venom_family")
     VenomX17.join_chat("Its_Venom_family")
 if VenomX18:
-    VenomX18.Start()
+    VenomX18.start()
     VenomX18.join_chat("Its_Venom_family")
     VenomX18.join_chat("Its_Venom_family")
 if VenomX19:
-    VenomX19.Start()
+    VenomX19.start()
     VenomX19.join_chat("Its_Venom_family")
     VenomX19.join_chat("Its_Venom_family")
 if VenomX20:
-    VenomX20.Start()
+    VenomX20.start()
     VenomX20.join_chat("Its_Venom_family")
     VenomX20.join_chat("Its_Venom_family")
 
