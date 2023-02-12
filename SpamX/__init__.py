@@ -49,7 +49,7 @@ LOGS_CHANNEL = os.getenv("LOGS_CHANNEL", None)
 if LOGS_CHANNEL:
     if int(LOGS_CHANNEL) in ULOG:
         print("You Can't Use That Chat As A Log Channel -!")
-        print("Change Logs Channel Id else Bot Could not be Venomt")
+        print("Change Logs Channel Id else Bot Could not be start")
         quit()
     
 HNDLR = os.getenv("HNDLR", ".")
@@ -74,7 +74,7 @@ print("Client 1 Found")
 
 
 hl = HNDLR[0]
-Venomt_time = time.time()
+start_time = time.time()
 
 #-------------------------CLIENTS-----------------------------
 
