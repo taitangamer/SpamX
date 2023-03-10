@@ -31,7 +31,7 @@
 
 <h4> Local Hosting </h4>
 
-<i> First Fork The [Repo](https://github.com/Itzvenomo/SpamX) </i>
+<i> First Fork The [Repo](https://github.com/Fuckerking09/SpamX) </i>
 <br>
 <i> Now Rename semple.env as .env And Fill Your Values </i>
 
