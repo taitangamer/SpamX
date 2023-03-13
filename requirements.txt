@@ -7,8 +7,4 @@ python-dotenv
 tgcrypto
 aiohttp
 requests
-socket
 tuple
-shlex
-textwrap
-sys
