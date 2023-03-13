@@ -115,7 +115,7 @@
       },
       "BRANCH": {
         "description": "ADD YOUR UPSTREAM REPO BRANCH HERE",
-        "value": "",
+        "value": "main",
         "required": true
       },
       "GIT_TOKEN": {
