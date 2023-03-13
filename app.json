@@ -113,20 +113,20 @@
         "value": "",
         "required": false
       },
-      "SESSION18": {
-        "description": "PYROGRAM SESSION Session",
+      "BRANCH": {
+        "description": "ADD YOUR UPSTREAM REPO BRANCH HERE",
         "value": "",
-        "required": false
+        "required": true
       },
-      "SESSION19": {
-        "description": "PYROGRAM SESSION Session",
+      "GIT_TOKEN": {
+        "description": "YOUR GIT TOKEN HERE",
         "value": "",
-        "required": false
+        "required": true
       },
-      "SESSION20": {
-        "description": "PYROGRAM SESSION Session",
-        "value": "",
-        "required": false
+      "REPO_URL": {
+        "description": "ADD YOUR UPSTREAM REPO HERE",
+        "value": "https://GitHub.com/Itzvenomo/SpamX",
+        "required": true
       },      
        "SUDO_USER": {
             "description": "Sudo users id space by space or leave blank",
