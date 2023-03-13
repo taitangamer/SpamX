@@ -7,3 +7,5 @@ python-dotenv
 tgcrypto
 aiohttp
 requests
+aiofiles
+bs4
