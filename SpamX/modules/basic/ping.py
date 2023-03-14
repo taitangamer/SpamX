@@ -61,6 +61,7 @@ async def speed_test(client: Client, message: Message):
     )
 
 pongg = "ᴠᴇɴᴏᴍ🔥 ᴜsᴇʀʙᴏᴛ"
+HNDLR = "."
 
 @Client.on_message(filters.user(SUDO_USER) & filters.command(["ping"], prefixes=HNDLR))
 @Client.on_message(filters.me & filters.command(["ping"], prefixes=HNDLR))
