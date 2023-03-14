@@ -1,119 +1,35 @@
 {
-      "name": "Venom X Spam ",
-      "description": "A Pyrogram Based Spam Bots With Many Cmds Fast And Stable",
-      "logo": "https://telegra.ph/file/f312793bf706724dbeca2.jpg",
-      "keywords": [
-        "telegram",
-        "PYROGRAM",
-        "telegram-bot",
-        "VenomXSpam",
-        "SpamBots"
-      ],   
-  "repository": "https://github.com/Itzvenomo/SpamX",
-  "website": "https://github.com/Itzvenomo",
-  "success_url": "https://t.me/AyushXMusicbot",
-  "env": {
-             "API_ID": {
-        "description": "Fill Api ID Take this value from My.telegram.org",
-        "value": "",
-        "required": true
-      },
-      "ALIVE_PIC": {
-        "description": "your alive pic or video",
-        "value": "",
-        "required": false
-      },
-      "API_HASH": {
-        "description": "Fill Api hash Take this value from My.telegram.org",
-        "value": "",
-        "required": true
-      },
-      "SESSION": {
-        "description": "PYROGRAM SESSION Session",
-        "value": "",
-        "required": true
-      },
-      "SESSION2": {
-        "description": "PYROGRAM SESSION Session",
-        "value": "",
-        "required": false
-      },
-      "SESSION3": {
-        "description": "PYROGRAM SESSION Session",
-        "value": "",
-        "required": false
-      },
-      "SESSION4": {
-        "description": "PYROGRAM SESSION Session",
-        "value": "",
-        "required": false
-      },
-      "SESSION5": {
-        "description": "PYROGRAM SESSION Session",
-        "value": "",
-        "required": false
-      },
-      "SESSION6": {
-        "description": "PYROGRAM SESSION Session",
-        "value": "",
-        "required": false
-      },
-      "SESSION7": {
-        "description": "PYROGRAM SESSION Session",
-        "value": "",
-        "required": false
-      },
-      "SESSION8": {
-        "description": "PYROGRAM SESSION Session",
-        "value": "",
-        "required": false
-      },
-      "SESSION9": {
-        "description": "PYROGRAM SESSION Session",
-        "value": "",
-        "required": false
-      },
-      "SESSION10": {
-        "description": "PYROGRAM SESSION Session",
-        "value": "",
-        "required": false
-      },
-      "SESSION11": {
-        "description": "PYROGRAM SESSION Session",
-        "value": "",
-        "required": false
-      },
-      "SESSION12": {
-        "description": "PYROGRAM SESSION Session",
-        "value": "",
-        "required": false
-      },
-      "SESSION13": {
-        "description": "PYROGRAM SESSION Session",
-        "value": "",
-        "required": false
-      },
-      "SESSION14": {
-        "description": "PYROGRAM SESSION Session",
-        "value": "",
-        "required": false
-      },
-      "SESSION15": {
-        "description": "PYROGRAM SESSION Session",
-        "value": "",
-        "required": false
-      },
-      "SESSION16": {
-        "description": "PYROGRAM SESSION Session",
-        "value": "",
-        "required": false
-      },
-      "SESSION17": {
-        "description": "PYROGRAM SESSION Session",
-        "value": "",
-        "required": false
-      },
-      "BRANCH": {
+    "name": "Venom Userbot",
+    "description": "An first Telegram Userbot with multi Clients for Spamming.",
+    "keywords": ["pyrogram", "userbot"],
+    "repository": "https://github.com/Itzvenomo/SpamX",
+  "stack": "container",
+    "env": {
+        "STRING_SESSION1": {
+            "description": "fill with the pyrogram session string from https://t.me/venom_stringbot",
+            "required": true
+        },
+        "MONGO_URL": {
+            "description": "Fill there an mongo database from mongodb.com",
+            "required": true,
+            "value": ""
+        },
+        "SUDO_USERS": {
+            "description": "Fill there your I'd go to @Dark_Queen_robot pm and type /id",
+            "required": true,
+            "value": "5956803759"
+        },
+        "OWNER_ID": {
+            "description": "Fill there your I'd go to @Dark_Queen_robot pm and type /id",
+            "required": true,
+            "value": "5956803759"
+        },
+        "LOG_GROUP": {
+            "description": "Logs Group ID (Make A Private Group And Add id here)",
+            "value": "",
+            "required": false
+        },
+        "BRANCH": {
         "description": "ADD YOUR UPSTREAM REPO BRANCH HERE",
         "value": "main",
         "required": true
@@ -127,39 +43,12 @@
         "description": "ADD YOUR UPSTREAM REPO HERE",
         "value": "https://GitHub.com/Itzvenomo/SpamX",
         "required": true
-      },      
-       "SUDO_USER": {
-            "description": "Sudo users id space by space or leave blank",
-            "value": "",
-            "required": false
-        },
-      "OWNER_ID": {
-            "description": "Sudo users id space by space",
-            "value": "",
-            "required": true
-        },
-      "LOGS_CHANNEL": {
-            "description": "Logs Group ID (Make A Private Group And Add Your All Spam id Their)",
-            "value": "",
-            "required": false
-        },
-      "HNDLR": {
-            "description": "Your Spam Userbot's Command handler",
-            "value": ".",
-            "required": false  
+      },
+        "BOT_TOKEN": {
+            "description": "fill with your bot token get from @BotFather on telegram",
+            "required": true,
+            "value": ""
         }
-    },
-  "addons": [
-    {
-      "plan": "heroku-postgresql",
-      "options": {
-        "version": "12"
-      }
+
     }
-  ],
-    "buildpacks": [
-        {
-            "url": "heroku/python"
-        }
-    ]
-}
+  }
