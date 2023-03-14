@@ -60,18 +60,20 @@ async def speed_test(client: Client, message: Message):
         )
     )
 
-pongg = "ᴠᴇɴᴏᴍ🔥 ᴜsᴇʀʙᴏᴛ"
-HNDLR = "."
-
-@Client.on_message(filters.user(SUDO_USER) & filters.command(["ping"], prefixes=HNDLR))
-@Client.on_message(filters.me & filters.command(["ping"], prefixes=HNDLR))
-async def ping(_, e: Message):       
-      start = datetime.datetime.now()
-      uptime = await get_time((time.time() - start_time))
-      Fuk = await e.reply("**Pong !!**")
-      end = datetime.datetime.now()
-      ms = (end-start).microseconds / 1000
-      await Fuk.edit_text(f"⌾ {pongg} ⌾ \n\n ༝ ᴘɪɴɢ: `{ms}` ᴍs \n ༝ ᴜᴘᴛɪᴍᴇ: `{uptime}` \n ༝ ᴠᴇʀsɪᴏɴ: `{__version__}`")
+@Client.on_message(
+    filters.command(["ping"], ".") & (filters.me | filters.user(SUDO_USER))
+)
+async def pingme(client: Client, message: Message):
+    uptime = await get_readable_time((time.time() - StartTime))
+    start = datetime.now()
+    end = datetime.now()
+    duration = (end - start).microseconds / 1000
+    await xx.edit(
+        f"**ᴠᴇɴᴏᴍ X ᴜsᴇʀʙᴏᴛ**\n"
+        f"**ᴘɪɴɢ** - `%sms`\n"
+        f"**ᴜᴘᴛɪᴍᴇ:** `{uptime}` \n"
+        f"**ᴏᴡɴᴇʀ:** {client.me.mention}" % (duration)
+    )
 
 
 add_command_help(
