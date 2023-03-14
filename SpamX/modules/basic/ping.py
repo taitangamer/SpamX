@@ -62,7 +62,7 @@ async def speed_test(client: Client, message: Message):
 
 pongg = "ᴠᴇɴᴏᴍ🔥 ᴜsᴇʀʙᴏᴛ"
 
-@Client.on_message(filters.user(SUDO_USERS) & filters.command(["ping"], prefixes=HNDLR))
+@Client.on_message(filters.user(SUDO_USER) & filters.command(["ping"], prefixes=HNDLR))
 @Client.on_message(filters.me & filters.command(["ping"], prefixes=HNDLR))
 async def ping(_, e: Message):       
       start = datetime.datetime.now()
