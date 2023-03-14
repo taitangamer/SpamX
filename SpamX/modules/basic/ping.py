@@ -66,6 +66,7 @@ async def speed_test(client: Client, message: Message):
 async def pingme(client: Client, message: Message):
     uptime = await get_readable_time((time.time() - StartTime))
     start = datetime.now()
+    xx = await message.reply_text("**ᴠᴇɴᴏᴍᴏᴘ**")
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await xx.edit(
