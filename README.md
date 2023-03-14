@@ -12,7 +12,7 @@
 <h3 align="center"> Features °</h3>
 
 - [x] Fast And Stable
-- [x] Deploy Upto 20 Clients
+- [x] Deploy Upto 10 Clients
 - [x] Spam | pornspam | Dm Spam
 - [x] Raid | Dm Raid | Love Raid
 - [x] Profile Change cmds
