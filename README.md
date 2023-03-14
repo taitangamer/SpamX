@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="SpamX/VenomX.png" alt="VenomXSpam Logo">
+  <img src="https://telegra.ph/file/17ded061a4ae0833a77b7.jpg" alt="VenomXSpam Logo">
 </p>
 <h1 align="center">
   <b>• ᴠᴇɴᴏᴍXsᴘᴀᴍ •</b>
