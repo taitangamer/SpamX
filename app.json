@@ -29,6 +29,16 @@
             "value": "",
             "required": false
         },
+        "API_ID": {
+        "description": "ADD YOUR API ID HERE",
+        "value": "",
+        "required": true
+        },
+        "API_HASH": {
+        "description": "ADD YOUR API HASH HERE",
+        "value": "",
+        "required": true
+        },
         "BRANCH": {
         "description": "ADD YOUR UPSTREAM REPO BRANCH HERE",
         "value": "main",
