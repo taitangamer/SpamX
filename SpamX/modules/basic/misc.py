@@ -53,11 +53,11 @@ async def alive(client: Client, message: Message):
 
 @Client.on_message(filters.command("repo", ".") & filters.me)
 async def repo(bot: Client, message: Message):
-    await message.edit("⚡")
+    await message.edit("👻")
     await asyncio.sleep(1)
     await message.edit("ғᴇᴛᴄʜɪɴɢ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ.....")
     await asyncio.sleep(1)
-    await message.edit("ʜᴇʀᴇ ɪs ʀᴇᴘᴏ: \n\n\nhttps://github.com/Itzvenomo/SpamX\nғᴏʀᴋ & ɢɪᴠᴇ ᴀɴ sᴛᴀʀ ⭐")
+    await message.edit("ʜᴇʀᴇ ɪs ʀᴇᴘᴏ: \n\n\nhttps://t.me/Its_Venom_family Join and Type #repo 👻\nғᴏʀᴋ & ɢɪᴠᴇ ᴀɴ sᴛᴀʀ ⭐")
 
 
 @Client.on_message(filters.command("creator", ".") & filters.me)
