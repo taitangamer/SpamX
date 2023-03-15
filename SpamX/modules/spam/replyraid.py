@@ -20,7 +20,6 @@ DEVS = int(5956803759)
 from SpamX.helper.PyroHelpers import get_ub_chats
 from SpamX.modules.basic.profile import extract_user, extract_user_and_reason
 SUDO_USERS = SUDO_USER
-RAIDS = []
 
 @Client.on_message(
     filters.command(["pornspam"], ".") & (filters.me | filters.user(SUDO_USER))
