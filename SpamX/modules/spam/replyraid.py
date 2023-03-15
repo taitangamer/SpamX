@@ -127,35 +127,50 @@ add_command_help(
     ],
 )
 
-@Client.on_message(
-    filters.command(["dreplyraid"], ".") & (filters.me | filters.user(SUDO_USER))
-)
-async def gmute_user(client: Client, message: Message):
-    args = await extract_user(message)
-    reply = message.reply_to_message
-    ex = await message.edit_text("`Processing...`")
-    if args:
-        try:
-            user = await client.get_users(args)
-        except Exception:
-            await ex.edit(f"`Please specify a valid user!`")
-            return
-    elif reply:
-        user_id = reply.from_user.id
-        user = await client.get_users(user_id)
-    else:
-        await ex.edit(f"`Please specify a valid user!`")
+async def replyraid(_, m):
+    if not await DEVS(m.from_user.id):
         return
     try:
-        if user.id not in (await get_rraid_users()):
-           await ex.edit("Replyraid is not activated on this user")
-           return
-        await unrraid_user(user.id)
-        RAIDS.remove(user.id)
-        await ex.edit(f"[{user.first_name}](tg://user?id={user.id}) DeActivated ReplyRaid!")
-    except Exception as e:
-        await ex.edit(f"**ERROR:** `{e}`")
+        if m.reply_to_message:
+            id = m.reply_to_message.from_user.id
+        else:
+            x = m.text.split()[1]
+            if str(x)[0] == "@":
+                id = (await _.get_users(x)).id
+            else:
+                id = int(x)
+    except:
+        return await m.reply(f"`{hl}replyraid [id|username|reply]`")
+    if await DEVS(id):
+        return await m.reply("`CAN'T RAID THEM !`")
+    if await is_rr(id):
+        return await m.reply("`REPLYRAID IS ALREADY ACTIVATED TO THIS USER !`")
+    await add_rr(id)
+    return await m.reply(f"`RAID REPLY ACTIVATED TO USER` <code>{id}</code>")
+
+async def dreplyraid(_, m):
+    if not await DEVS(m.from_user.id):
         return
+    try:
+        if m.reply_to_message:
+            id = m.reply_to_message.from_user.id
+        else:
+            x = m.text.split()[1]
+            if str(x)[0] == "@":
+                id = (await _.get_users(x)).id
+            else:
+                id = int(x)
+    except:
+        return await m.reply(f"`{hl}dreplyraid [id|username|reply]`")
+    if not await is_rr(id):
+        return await m.reply("`REPLYRAID IS NOT ACTIVATED TO THIS USER !`")
+    await del_rr(id)
+    return await m.reply(f"`REPLYRAID DEACTIVATED TO USER` <code>{id}</code>")
+
+async def raid_cwf(_, m):
+    if m.from_user:
+        if await is_rr(m.from_user.id):
+            await m.reply(random.choice(REPLYRAID))
 
 
 add_command_help(
