@@ -5,3 +5,4 @@ gitpython
 asyncio
 python-dotenv
 tgcrypto
+wget
