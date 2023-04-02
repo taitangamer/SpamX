@@ -14,17 +14,17 @@ from SpamX.modules.help import add_command_help
 
 class WWW:
     SpeedTest = (
-        "sᴘᴇᴇᴅᴛᴇsᴛ sᴛᴀʀᴛᴇᴅ ᴀᴛ `{start}`\n\n"
-        "ᴘɪɴɢ:\n{ping} ms\n\n"
-        "ᴅᴏᴡɴʟᴏᴀᴅ:\n{download}\n\n"
-        "ᴜᴘʟᴏᴀᴅ:\n{upload}\n\n"
-        "ɪsᴘ:\n__{isp}__"
+        "🌠sᴘᴇᴇᴅᴛᴇsᴛ sᴛᴀʀᴛᴇᴅ ᴀᴛ `{start}`\n\n"
+        "✨ᴘɪɴɢ:\n{ping} ms\n\n"
+        "🌟ᴅᴏᴡɴʟᴏᴀᴅ:\n{download}\n\n"
+        "⚡ᴜᴘʟᴏᴀᴅ:\n{upload}\n\n"
+        "💫ɪsᴘ:\n__{isp}__"
     )
 
     NearestDC = "ᴄᴏᴜɴᴛʀʏ: `{}`\n" "ɴᴇᴀʀᴇsᴛ ᴅᴀᴛᴀᴄᴇɴᴛᴇʀ: `{}`\n" "ᴛʜɪs ᴅᴀᴛᴀᴄᴇɴᴛᴇʀ: `{}`"
 
 @Client.on_message(
-    filters.command(["speedtest"], ".") & (filters.me | filters.user(SUDO_USER))
+    filters.command(["speedtest", "spt"], ".") & (filters.me | filters.user(SUDO_USER))
 )
 async def speed_test(client: Client, message: Message):
     new_msg = await message.reply_text("`Running speed test . . .`")
