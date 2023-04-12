@@ -64,7 +64,7 @@ async def alive_function(message: Message, answers):
         InlineQueryResultArticle(
             title="Alive",
             description="Check Bot's Stats",
-            thumb_url="https://telegra.ph/file/17ded061a4ae0833a77b7.jpg",
+            thumb_url="https://telegra.ph/file/3b9730e0042579e85c243.jpg",
             input_message_content=InputTextMessageContent(
                 msg, parse_mode=ParseMode.HTML, disable_web_page_preview=True
             ),
